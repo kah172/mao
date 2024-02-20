@@ -2,8 +2,8 @@
   "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1",
   "homeUrl": "https://gimytv.app/",
   "dcVipFlag": "true",
-//  "pCfgJs": "https://gimytv.app/static/js/playerconfig.js",
-//  "pCfgJsR": "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
+  //"pCfgJs": "https://gimytv.app/static/js/playerconfig.js",
+  //"pCfgJsR": "[\\W|\\S|.]*?MacPlayerConfig.player_list[\\W|\\S|.]*?=([\\W|\\S|.]*?),MacPlayerConfig.downer_list",
   "dcShow2Vip": {},
   "dcPlayUrl": "true",
   "cateNode": "//ul[@class='myui-header__menu']/li/a[contains(@href, 'browse')]",
@@ -16,16 +16,14 @@
     "综艺": "tv_show",
     "动漫": "anime"
   },
-  
-// Home Summary =====================================================
+  // Home Summary =====================================================
   "homeVodNode": "//ul[@class='myui-vodlist clearfix']/li/div/a",
   "homeVodName": "/@title",
   "homeVodId": "/@href",
   "homeVodIdR": "/(\\w+).html",
   "homeVodImg": "/@data-original",
   "homeVodMark": "/span[contains(@class, 'pic-text')]/text()",
-  
-// Category Summary =================================================
+  // Category Summary =================================================
   "cateUrl": "https://gimytv.app/genre/{cateId}-{area}-{year}-{catePg}/by/{by}.html",
   "cateVodNode": "//ul[@class='myui-vodlist clearfix']/li/div/a",
   "cateVodName": "/@title",
@@ -33,8 +31,7 @@
   "cateVodIdR": "/(\\w+).html",
   "cateVodImg": "/@data-original",
   "cateVodMark": "/span[contains(@class, 'pic-text')]/text()",
-  
-// Category Details =================================================
+  // Category Details =================================================
   "dtUrl": "https://gimytv.app/{vid}.html",
   "dtNode": "//div[@class='container']",
   "dtName": "//div[@class='myui-content__thumb']/a/@title",
@@ -47,8 +44,7 @@
   "dtActor": "//p[@class='data']/span[contains(text(), '主演')]/following-sibling::*/text()",
   "dtDirector": "//p[@class='data']/span[contains(text(), '導演')]/following-sibling::*/text()",
   "dtDesc": "//div[contains(@class,'col-pd')]/p/text()",
-  
-// Playlist =========================================================
+  // Playlist =========================================================
   "dtFromNode": "//div[@class='myui-panel_hd']/div/h3",
   "dtFromName": "substring-before(.,'線路')",
   "dtUrlNode": "//ul[contains(@class,'myui-content__list')]",
@@ -59,6 +55,7 @@
   "dtUrlNameR": "",
   "playUrl": "https://gimytv.app/{playUrl}.html",
   "playUa": "",
+  // Search Results ===================================================
   "searchUrl": "https://gimytv.app/index.php/ajax/suggest?mid=1&wd={wd}&limit=10",
   "scVodNode": "json:list",
   "scVodName": "name",
@@ -66,8 +63,7 @@
   "scVodIdR": "",
   "scVodImg": "pic",
   "scVodMark": "",
-  
-// Search Results ===================================================
+  // Filters =======================================================
   "filter": {
     "movies": [
       {
@@ -105,6 +101,7 @@
         "name": "年份",
         "value": [
           {"n": "全部","v": ""},
+          {"n": "2024","v": "2024"},
           {"n": "2023","v": "2023"},
           {"n": "2022","v": "2022"},   
           {"n": "2021","v": "2021"},
@@ -150,6 +147,7 @@
         "name": "年份",
         "value": [
           {"n": "全部","v": ""},
+          {"n": "2024","v": "2024"},
           {"n": "2023","v": "2023"},
           {"n": "2022","v": "2022"},           
           {"n": "2021","v": "2021"},
@@ -193,6 +191,7 @@
         "name": "年份",
         "value": [
           {"n": "全部","v": ""},
+          {"n": "2024","v": "2024"},
           {"n": "2023","v": "2023"},
           {"n": "2022","v": "2022"},           
           {"n": "2021","v": "2021"},
@@ -246,6 +245,7 @@
         "name": "年份",
         "value": [
           {"n": "全部","v": ""},
+          {"n": "2024","v": "2024"},
           {"n": "2023","v": "2023"},
           {"n": "2022","v": "2022"},           
           {"n": "2021","v": "2021"},
